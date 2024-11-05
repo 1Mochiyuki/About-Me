@@ -15,7 +15,7 @@ function App() {
 
             </div>
             <div>
-                <span className='text-sm'>Pronouns: He/She/They</span>
+                <span className='text-sm font-nunito'>Pronouns: He/She/They</span>
                 <ProfilePicture></ProfilePicture>
                 <AboutMe></AboutMe>
                 <div className='pt-2'>
@@ -31,7 +31,7 @@ function AboutMe() {
     return (
 
         <div className='mt-12 bg-dark-gray p-2 rounded-lg border-rose-300 border-2'>
-            <p className='font-terminalFont'>
+            <p className='font-nunito text-lg'>
                 Hi, I'm Yuki or staticdots!<br />
                 I'm 21 years old and an aspiring software developer mainly working with Go and Svelte.<br />
                 I LOVE using the terminal, and have even begun making TUI (Terminal User Interface) apps using <a href='https://github.com/charmbracelet/bubbletea' className='text-rose-300'>Charm</a>.<br />
@@ -49,7 +49,7 @@ function Banner() {
 
     return (
         <div className='flex justify-evenly pb-6'>
-            <span className='text-6xl font-mono font-terminalFont font-bold'>Yuki</span>
+            <span className='text-6xl font-nunito font-bold'>♡ YUKI ♡</span>
         </div >
     )
 }
@@ -57,7 +57,7 @@ function Banner() {
 
 function Socials() {
     return (
-        <div className='flex justify-evenly pb-4 font-terminalFont'>
+        <div className='flex justify-evenly pb-4 font-nunito'>
             <a href='https://github.com/1Mochiyuki' className='text-rose-300'>
                 {/* <SocialLink name="Github"></SocialLink> */}
                 <span>Github</span>

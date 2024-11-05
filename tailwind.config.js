@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 /** 1a1a1a*/
+const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
     content: [
         "./index.html",
@@ -9,7 +10,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                terminalFont: ["DotGothic16"],
+                nunito: ['Nunito', ...defaultTheme.fontFamily.sans]
 
             },
             colors: {
