@@ -1,5 +1,6 @@
 import './App.css'
 
+import profilePic from '../public/pfp.jpg'
 
 
 
@@ -77,7 +78,7 @@ function ProfilePicture() {
     return (
 
         <div className='flex justify-center'>
-            <img src='../public/pfp.jpg' className='w-52 h-52 rounded-lg border-rose-300 border-2 p-1' />
+            <img src={profilePic} className='w-52 h-52 rounded-lg border-rose-300 border-2 p-1' />
         </div>
     )
 }
