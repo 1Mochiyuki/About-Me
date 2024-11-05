@@ -1,6 +1,6 @@
 import './App.css'
 
-import profilePic from '../public/pfp.jpg'
+import profilePic from './assets/pfp.jpg'
 
 
 

@@ -9,7 +9,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                terminalFont: ["DotGothic16", "sans-serif"]
+                terminalFont: ["DotGothic16"],
 
             },
             colors: {
