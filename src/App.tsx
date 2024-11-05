@@ -1,58 +1,86 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function HelloWorld() {
-    const [msg, setMsg] = useState("World")
-    const [result, setResult] = useState("")
-    return (
-        <div>
-            <h1>Hello {msg}</h1>
-            <form onSubmit={e => {
-                e.preventDefault()
-                setMsg(result)
-            }}>
-                <div>
 
-                    <input name='msg-input' placeholder='Type a message' type='text' onChange={e => {
-                        setResult(e.target.value)
-                    }} />
+
+
+
+function App() {
+
+    return (
+        <>
+            <div className='absolute left-0 top-0 right-0 pt-4 bg-rose-300 rounded-lg'>
+                <Banner>
+
+                </Banner>
+
+            </div>
+            <div>
+                <span className='text-sm'>Pronouns: He/She/They</span>
+                <ProfilePicture></ProfilePicture>
+                <AboutMe></AboutMe>
+                <div className='pt-2'>
+
+                    <Socials></Socials>
                 </div>
-                <button type='submit'>Submit</button>
-            </form>
+            </div>
+        </>
+    )
+}
+
+function AboutMe() {
+    return (
+
+        <div className='mt-12 bg-dark-gray p-2 rounded-lg border-rose-300 border-2'>
+            <p className='font-terminalFont'>
+                Hi, I'm Yuki or staticdots!<br />
+                I'm 21 years old and an aspiring software developer mainly working with Go and Svelte.<br />
+                I LOVE using the terminal, and have even begun making TUI (Terminal User Interface) apps using <a href='https://github.com/charmbracelet/bubbletea' className='text-rose-300'>Charm</a>.<br />
+                I'll be updating this page with finished and in-progress projects I'm working on.<br />
+                I'm currently learning <a href='https://www.rust-lang.org/' className='text-rose-300'>Rust</a> and eventually plan to learn <a href='https://ziglang.org/' className='text-rose-300'>Zig</a>.
+
+            </p>
+
         </div>
     )
 }
 
 
-function App() {
-    const [count, setCount] = useState(0)
+
+function Banner() {
 
     return (
-        <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img src={reactLogo} className="logo react" alt="React logo" />
-                </a>
-            </div>
-            <h1>Vite + React + Typescript</h1>
-            <HelloWorld></HelloWorld>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
-        </>
+        <div className='flex justify-evenly pb-6'>
+            <span className='text-6xl font-mono font-terminalFont font-bold'>Yuki</span>
+        </div >
+    )
+}
+
+
+function Socials() {
+    return (
+        <div className='flex justify-evenly pb-4 font-terminalFont'>
+            <a href='https://github.com/1Mochiyuki' className='text-rose-300'>
+                {/* <SocialLink name="Github"></SocialLink> */}
+                <span>Github</span>
+            </a>
+            <a href='https://x.com/staticdots' className='text-rose-300'>
+
+                <span>Twitter</span>
+            </a>
+            <a href='https://bsky.app/profile/staticdots.bsky.social' className='text-rose-300'>
+                <span>BlueSky</span>
+            </a>
+
+        </div>
+    )
+}
+
+function ProfilePicture() {
+    return (
+
+        <div className='flex justify-center'>
+            <img src='../public/pfp.jpg' className='w-52 h-52 rounded-lg border-rose-300 border-2 p-1' />
+        </div>
     )
 }
 
