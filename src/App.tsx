@@ -10,7 +10,6 @@ function App() {
         <>
             <div className='absolute left-0 top-0 right-0 pt-4 bg-rose-300 rounded-lg'>
                 <Banner>
-
                 </Banner>
 
             </div>
@@ -39,7 +38,6 @@ function AboutMe() {
                 I'm currently learning <a href='https://www.rust-lang.org/' className='text-rose-300'>Rust</a> and eventually plan to learn <a href='https://ziglang.org/' className='text-rose-300'>Zig</a>.
 
             </p>
-
         </div>
     )
 }
