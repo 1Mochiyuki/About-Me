@@ -1,6 +1,7 @@
 import './App.css'
 
 import profilePic from './assets/pfp.jpg'
+import { Analytics } from '@vercel/analytics/react'
 
 
 
@@ -14,6 +15,7 @@ function App() {
                 </Banner>
 
             </div>
+            <Analytics></Analytics>
             <div>
                 <span className='text-sm font-nunito'>Pronouns: He/She/They</span>
                 <ProfilePicture></ProfilePicture>
@@ -22,7 +24,7 @@ function App() {
 
                     <Socials></Socials>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
